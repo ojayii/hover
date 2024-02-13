@@ -11,14 +11,15 @@ body, html {
 
 .container {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
     flex-flow: row wrap;
-    gap: 3vw;
+    gap: clamp(1rem, 3vw, 2.5rem);
     align-content: center;
     justify-content: center;
     background-color: #000000;
-    padding-block: 1rem;
+    padding-block: clamp(1rem, 3vw, 2.5rem);
 }
 
 .box {
