@@ -4,8 +4,9 @@ const rand = (max) => {
 }
 
 // console.log(rand(255));
+let width = screen.width;
 
-for( let i = 0; i < 45; i++  ) {
+for( let i = 0; i < ((12.5 /100)* width); i++  ) {
 
  let box;
  box = document.createElement("div");
@@ -24,6 +25,10 @@ const leave = () => {
  
  box.addEventListener("mouseenter", enter)
  box.addEventListener("mouseleave", leave)
+
+setInterval(() => {
+    enter();
+}, 1000)
  
 // enter()
 }
